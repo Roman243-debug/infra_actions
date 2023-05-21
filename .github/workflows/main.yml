@@ -56,8 +56,8 @@ jobs:
     - name: executing remote ssh commands to deploy
       uses: appleboy/ssh-action@master
       with:
-        host: 158.160.64.79
-        username: roman_mikson
+        host: ${{secrets.SSH_HOST}}
+        username: ${{secrets.SSH_USER}}
         key: ${{secrets.KEY}}
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
