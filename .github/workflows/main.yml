@@ -47,4 +47,4 @@ jobs:
           uses: docker/build-push-action@v2 
           with:
             push: true
-            tags: romanmikson/romanmikson:gates
+            tags: romanmikson/romanmikson:latest
