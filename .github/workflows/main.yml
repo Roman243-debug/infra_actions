@@ -56,8 +56,8 @@ jobs:
     - name: executing remote ssh commands to deploy
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secrets.SSH_HOTS }}
-        username: ${{ secrets.SSH_USER }}
+        host: 158.160.64.79
+        username: roman_mikson
         script: |
           # Выполняет pull образа с DockerHub
           sudo docker pull romanmikson/gates
