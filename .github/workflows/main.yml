@@ -58,7 +58,7 @@ jobs:
       with:
         host: 158.160.64.79
         username: roman_mikson
-        key: ${{secrets.SSH_KEY}}
+        key: ${{ secrets.SSH_KEY }}
         passphrase: 285285sd
         script: |
           # Выполняет pull образа с DockerHub
